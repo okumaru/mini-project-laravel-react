@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 
 const logout = async () => {
-  const req = await fetch("http://localhost:8000/logout", { 
+  const req = await fetch(`${window.location.origin}/logout`, { 
     method: "POST", 
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({_token: csrf_token}),
