@@ -59,12 +59,17 @@
     php artisan db:seed --class=ProjectSeeder
     ```
 
-8. Run php artisan
+8. Execute create simlink storage
+    ```
+    php artisan storage:link
+    ```
+
+9.  Run php artisan
     ```
     php artisan serve
     ```
 
-9.  Run npm  
+10. Run npm  
     if use NPM,
     ```
     npm run dev
@@ -117,7 +122,12 @@
     php artisan db:seed --class=ProjectSeeder
     ```
 
-8. Setup xampp httpd vhosts
+8. Execute create simlink storage
+    ```
+    php artisan storage:link
+    ```
+    
+9. Setup xampp httpd vhosts
    1. Create folder in directory `htdocs` in your xampp path directory.
    2. Copy source code to new directory(_step 6.1_)
    3. Open file `/apache/conf/extra/httpd-vhosts.conf` in directory of your xampp.
@@ -139,6 +149,6 @@
     127.0.0.1 {YOUR-PROJECT-DIR}
     ```
 
-9. The last open application on your browser.
+10. The last open application on your browser.
 
 
