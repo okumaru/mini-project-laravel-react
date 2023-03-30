@@ -29,14 +29,14 @@
 2. Open folder application after finish clone repository to local.
 3. Setup file `.env` (copy `.env.example` to `.env`)
 4. Change and Adjust values in file `.env`.
-   1. `APP_URL`, your domain of application (_don't use localhost_). 
+   1. `APP_URL`, your domain of application (_use localhost_). 
    2. `DB_HOST`, endpoint of mysql/mariadb service .
    3. `DB_PORT`, port number of mysql/mariadb.
    4. `DB_DATABASE`, name of database on mysql/mariadb.
    5. `DB_USERNAME`, authenticated username for mysql/mariadb.
    6. `DB_PASSWORD`, authenticated password for mysql/mariadb.
-   7. `SANCTUM_STATEFUL_DOMAINS`, your domain of application (_don't use localhost and don't include http:// or https://_).
-   8. `SESSION_DOMAIN`, your domain of application (_don't use localhost and don't include http:// or https://_).
+   7. `SANCTUM_STATEFUL_DOMAINS`, your domain of application(_use localhost:8000_).
+   8. `SESSION_DOMAIN`, your domain of application (_use localhost_).
 5. Build interface  
     if use NPM,
     ``` 
@@ -126,7 +126,7 @@
     ```
     php artisan storage:link
     ```
-    
+
 9. Setup xampp httpd vhosts
    1. Create folder in directory `htdocs` in your xampp path directory.
    2. Copy source code to new directory(_step 6.1_)
