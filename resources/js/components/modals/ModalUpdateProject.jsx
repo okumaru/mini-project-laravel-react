@@ -126,7 +126,7 @@ export default function ModalUpdateProject({ data, clients, finished }) {
                   className="custom-select" 
                   id="project_status" 
                   name="project_status"
-                  value={data.project_status} 
+                  defaultValue={data.project_status} 
                 >
 
                   <option value="OPEN">Open</option>
